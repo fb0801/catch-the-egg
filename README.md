@@ -5,6 +5,9 @@ JS and JQuery catch the egg game project
 ## Issues:
 
 ## Changes made:
+-added alert when game is over
+
+-added sound for game
 
 
 
