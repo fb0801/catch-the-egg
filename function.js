@@ -9,7 +9,8 @@ function egg_down(egg){
 
 function check_egg_hits_floor(egg){
     if (collision(egg, floor)) {
-        show_bulls_eye(egg)
+        show_bulls_eye(egg) //show broken egg
+        decrement_life()
         return true 
     }
     return false
@@ -31,4 +32,23 @@ function hide_bulls_eye(bullseye_num){
         $('#bullseye' + bullseye_num).hide()
 
     }, 800)
+}
+
+function decrement_life(){
+ life--
+ life_span.text(life)   
+}
+
+function check_egg_hits_basket(egg){
+    if(collision(egg, basket)){
+        update_score()
+        return true
+    }
+    return false 
+}
+
+function update_score(){
+    score++
+    score_span.text(score)
+    score_1.text(score)
 }
