@@ -23,5 +23,12 @@ function set_egg_to_initial_position(egg){
 function show_bulls_eye(egg){
     bullseye_num = egg.attr('data-bullseye')
     $('#bulleye' + bullseye_num).show()
-    hide_bulls_eye()
+    hide_bulls_eye(bullseye_num)
+}
+
+function hide_bulls_eye(bullseye_num){
+    setTimeout(function () {
+        $('#bullseye' + bullseye_num).hide()
+
+    }, 800)
 }
