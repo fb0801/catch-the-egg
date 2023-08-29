@@ -41,8 +41,13 @@ function decrement_life(){
 
 function check_egg_hits_basket(egg){
     if(collision(egg, basket)){
-        update_score()
-        return true
+        egg_top = parseInt(egg.css('top'))
+        if(egg_top < basket_top){
+            update_score()
+            return true
+            
+        }
+       
     }
     return false 
 }
