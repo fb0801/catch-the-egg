@@ -27,3 +27,5 @@ var basket = $('#basket'),
     basket_top = container_height - basket_height,
     bullseye_num = 0;
 life_span.text(life);
+
+let beat = new Audio('sounds/Chickens-Moving.mp3');

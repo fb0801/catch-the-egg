@@ -6,18 +6,21 @@ $(function () {
             set_egg_to_initial_position(egg1);
         } else {
             egg_down(egg1);
+            beat.play();
         }
 
         if (check_egg_hits_floor(egg2) || check_egg_hits_basket(egg2)) {
             set_egg_to_initial_position(egg2);
         } else {
             egg_down(egg2);
+            beat.play();
         }
 
         if (check_egg_hits_floor(egg3) || check_egg_hits_basket(egg3)) {
             set_egg_to_initial_position(egg3);
         } else {
             egg_down(egg3);
+            beat.play();
         }
 
         if (life > 0) {
