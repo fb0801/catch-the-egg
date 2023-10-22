@@ -70,4 +70,5 @@ restart.click(function () {
 
 function myAlertFunction() {
     alert("GAME OVER YOU LOSE!");
+    beat.pause();
   }
